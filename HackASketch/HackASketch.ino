@@ -3,6 +3,7 @@ const int accelY = A1;
 const int accelZ = A2;
 const int lPot = A8;
 const int rPot = A9;
+const int cPot = A10;
 
 const float VOLT_REF = 3.3 / 5.0;
 const float zero_G = 512.0;
@@ -17,6 +18,7 @@ void setup() {
 
   pinMode(lPot, INPUT);
   pinMode(rPot, INPUT);
+  pinMode(cPot, INPUT);
 }
 
 // the loop routine runs over and over again forever:
@@ -25,7 +27,8 @@ void loop() {
 
   int pot0 = analogRead(lPot);
   int pot1 = analogRead(rPot);
-
+  int pot2 = analogRead(cPot);
+  
   // read the input on analog pin 0:
   int x = analogRead(accelX);
   delay(5);
@@ -42,6 +45,8 @@ void loop() {
   Serial.print("\t");
   Serial.print((((float)(y / VOLT_REF)) - zero_G)/scale);
   Serial.print("\t");
-  Serial.println((((float)(z / VOLT_REF)) - zero_G)/scale );
+  Serial.print((((float)(z / VOLT_REF)) - zero_G)/scale );
+  Serial.print("\t");
+  Serial.println(pot2);
 }
 
