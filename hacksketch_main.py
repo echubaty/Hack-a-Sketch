@@ -12,6 +12,12 @@ white = (255,255,255)
 
 # ugly, I know. just wanted to add some pretty colours
 colourList = [(0,0,0),
+(0,0,0),
+(0,0,0),
+(0,0,0),
+(0,0,0),
+(0,0,0),
+(0,0,0),
 (105,105,105),
 (128,128,128),
 (169,169,169),
@@ -219,10 +225,10 @@ while 1:
 		colourTup = colourList[colour]
 
 		# check for floating analog input and ignore unitl real input
-		if((drawX>150 and drawX<950) and (lastDrawX<100 or lastDrawX>1000)):
+		if((drawX>100 and drawX<950) and (lastDrawX<50 or lastDrawX>975)):
 			drawX = lastDrawX
 
-		if((drawY>150 and drawY<950) and (lastDrawY<100 or lastDrawY>1000)):
+		if((drawY>100 and drawY<950) and (lastDrawY<50 or lastDrawY>975)):
 			drawY = lastDrawY
 
 		# if you wanna print out some coordinates
