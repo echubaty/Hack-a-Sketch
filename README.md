@@ -53,9 +53,6 @@ I carried out the mod by:
 ![](https://github.com/echubaty/Hack-a-Sketch/blob/master/images/20161203_235645.jpg "")
 ![](https://github.com/echubaty/Hack-a-Sketch/blob/master/images/20161203_235655.jpg "")
 
-image2 - under cap with divider chopped off
-
-image3 - under side of pot
 
 ## Dependencies
 * Python 2.7
